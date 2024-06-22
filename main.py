@@ -21,19 +21,19 @@ def main():
     data = pd.read_excel('report5.xlsx',skiprows=7)
 
 
-    if data:
+    # if data:
         # if file_format == 'csv':
         #     df = pd.read_csv(data)
         # else:
         #     data = pd.read_excel(data,skiprows=7)
-        df = pd.DataFrame(data)
-            
-        st.dataframe(df.head())
-        # df.drop(columns={'Unnamed: 6'}, inplace=True)
-        df.rename(columns={'Unnamed: 0': 'Valid', 'Unnamed: 1': 'Time', 'Unnamed: 2': 'Lat', 'Unnamed: 3': 'Long',
-                                'Unnamed: 5': 'Speed', 'Unnamed: 4': 'Altitude', 'Unnamed: 7': 'attributes'}, inplace=True)
+    df = pd.DataFrame(data)
+        
+    st.dataframe(df.head())
+    # df.drop(columns={'Unnamed: 6'}, inplace=True)
+    df.rename(columns={'Unnamed: 0': 'Valid', 'Unnamed: 1': 'Time', 'Unnamed: 2': 'Lat', 'Unnamed: 3': 'Long',
+                            'Unnamed: 5': 'Speed', 'Unnamed: 4': 'Altitude', 'Unnamed: 7': 'attributes'}, inplace=True)
 
-        data.drop(index=[0], inplace=True)
+    data.drop(index=[0], inplace=True)
 
     if choice == '1.distinguish attributes':
         st.subheader(" Distinguishing attributes  :1234:")
