@@ -14,6 +14,7 @@ from math import radians, sin, cos, sqrt, atan2
 
 def main():
     st.set_page_config(layout="wide")
+    st.title("Geo Spatial Insights")
     EDA_tasks = ["1.distinguish attributes","2.Data Cleaning", "3.Speed","4.Maps","5.Entry & Exit points"]
     choice = st.sidebar.radio("select tasks:", EDA_tasks)
     #file_format = st.radio('Select file format:', ('csv', 'excel'), key='file_format')
@@ -405,6 +406,24 @@ def main():
                             # exit  = (f"{exit} {period}")
                             st.write('<span style="color: aqua;">Entry Point:  </span>',f'<span style="color: yellow;"> {entry}</span>',f'<span style="color: orange;">{period}</span>', unsafe_allow_html=True)
                             st.write('<span style="color: white;">Exit Point:  </span>',f'<span style="color: skyblue;"> {exit}</span>',f'<span style="color: lightgreen;">{period}</span>', unsafe_allow_html=True)
-
+    st.text("") 
+st.text("") 
+st.text("") 
+st.text("") 
+st.text("") 
+st.text("") 
+if st.sidebar.button("About Creator🧐", key="about_creator_button"):
+    with st.expander("kalkeesh jami"):
+        st.image("mepic.jpg", use_column_width=True)  
+        st.write("""
+        Hello! I'm KALKEESH JAMI #AKA Kalki, a passionate developer exploring the world of AI and programming.
+        
+        - I love building applications that make life easier.
+        - I'm good at Python and data analysis.
+        - Don't misunderstand me as a nerd; I'm socially adept too! 😄
+        - Thank you for checking out my app!
+        
+        Do check out my [LinkedIn](https://www.linkedin.com/in/kalkeesh-jami-42891b260/) and [GitHub](https://github.com/kalkeesh/).
+        """)
 if __name__ == '__main__':
     main()
