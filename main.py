@@ -17,16 +17,16 @@ def main():
     EDA_tasks = ["1.distinguish attributes","2.Data Cleaning", "3.Speed","4.Maps","5.Entry & Exit points"]
     choice = st.sidebar.radio("select tasks:", EDA_tasks)
     file_format = st.radio('Select file format:', ('csv', 'excel'), key='file_format')
-    data = st.file_uploader("UPLOAD A DATASET 	:open_file_folder: ")
-
+    # data = st.file_uploader("UPLOAD A DATASET 	:open_file_folder: ")
+    data = pd.read_excel('report5.xlsx',skiprows=7)
 
 
     if data:
-        if file_format == 'csv':
-            df = pd.read_csv(data)
-        else:
-            data = pd.read_excel(data,skiprows=7)
-            df = pd.DataFrame(data)
+        # if file_format == 'csv':
+        #     df = pd.read_csv(data)
+        # else:
+        #     data = pd.read_excel(data,skiprows=7)
+        df = pd.DataFrame(data)
             
         st.dataframe(df.head())
         # df.drop(columns={'Unnamed: 6'}, inplace=True)
