@@ -406,7 +406,7 @@ def main():
                             # exit  = (f"{exit} {period}")
                             st.write('<span style="color: aqua;">Entry Point:  </span>',f'<span style="color: yellow;"> {entry}</span>',f'<span style="color: orange;">{period}</span>', unsafe_allow_html=True)
                             st.write('<span style="color: white;">Exit Point:  </span>',f'<span style="color: skyblue;"> {exit}</span>',f'<span style="color: lightgreen;">{period}</span>', unsafe_allow_html=True)
-    elif == "About Creator🧐":
+    elif choice == "About Creator🧐":
         # if st.sidebar.button("About Creator🧐", key="about_creator_button"):
         with st.expander("kalkeesh jami"):
             st.image("mepic.jpg", use_column_width=True)  
