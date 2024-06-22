@@ -408,6 +408,7 @@ def main():
                             st.write('<span style="color: white;">Exit Point:  </span>',f'<span style="color: skyblue;"> {exit}</span>',f'<span style="color: lightgreen;">{period}</span>', unsafe_allow_html=True)
     elif choice == "About Creator🧐":
         # if st.sidebar.button("About Creator🧐", key="about_creator_button"):
+        st.subheader("about creator")
         with st.expander("kalkeesh jami"):
             st.image("mepic.jpg", use_column_width=True)  
             st.write("""
