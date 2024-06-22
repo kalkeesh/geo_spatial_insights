@@ -13,7 +13,6 @@ from math import radians, sin, cos, sqrt, atan2
 
 
 def main():
-    st.sidebar.title("Geo Spatial Insights")
     st.set_page_config(layout="wide")
     EDA_tasks = ["1.distinguish attributes","2.Data Cleaning", "3.Speed","4.Maps","5.Entry & Exit points"]
     choice = st.sidebar.radio("select tasks:", EDA_tasks)
