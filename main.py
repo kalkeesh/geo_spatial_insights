@@ -22,7 +22,7 @@ def main():
     EDA_tasks = ["1.distinguish attributes","2.Data Cleaning", "3.Speed","4.Maps","5.Entry & Exit points","About Creator🧐"]
     choice = st.sidebar.radio("select tasks:", EDA_tasks)
     with st.sidebar:
-        st_lottie(lottie_animation, height=300, key="lottie_animation")
+        st_lottie(lottie_animation, height=200, key="lottie_animation")
     #file_format = st.radio('Select file format:', ('csv', 'excel'), key='file_format')
     #data = st.file_uploader("UPLOAD A DATASET 	:open_file_folder: ")
     data = pd.read_excel('report5.xlsx',skiprows=7)
