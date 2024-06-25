@@ -7,10 +7,13 @@ from streamlit_folium import folium_static
 from shapely.geometry import Point
 import geopandas as gpd
 from math import radians, sin, cos, sqrt, atan2
+from streamlit_lottie import st_lottie
+import json
 
 
-
-
+def load_lottie_file(filepath: str):
+    with open(filepath, "r") as f:
+        return json.load(f)
 
 def main():
     st.set_page_config(layout="wide")
