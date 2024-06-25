@@ -21,8 +21,7 @@ def main():
     st.title("Geo Spatial Insights")
     EDA_tasks = ["1.distinguish attributes","2.Data Cleaning", "3.Speed","4.Maps","5.Entry & Exit points","About Creator🧐"]
     choice = st.sidebar.radio("select tasks:", EDA_tasks)
-    with st.sidebar:
-        st_lottie(lottie_animation, height=200, key="lottie_animation")
+
     #file_format = st.radio('Select file format:', ('csv', 'excel'), key='file_format')
     #data = st.file_uploader("UPLOAD A DATASET 	:open_file_folder: ")
     data = pd.read_excel('report5.xlsx',skiprows=7)
@@ -427,5 +426,7 @@ def main():
             
             Do check out my [LinkedIn](https://www.linkedin.com/in/kalkeesh-jami-42891b260/) and [GitHub](https://github.com/kalkeesh/).
             """)
+    with st.sidebar:
+        st_lottie(lottie_animation, height=200, key="lottie_animation")
 if __name__ == '__main__':
     main()
