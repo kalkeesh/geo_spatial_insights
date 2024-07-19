@@ -10,7 +10,7 @@ from math import radians, sin, cos, sqrt, atan2
 from streamlit_lottie import st_lottie
 import json
 
-st.set_page_config(page_title="geo spatial insights", page_icon = "🗺", layout = "wide", initial_sidebar_state = "auto")
+# st.set_page_config(page_title="geo spatial insights", page_icon = "🗺", layout = "wide", initial_sidebar_state = "auto")
 
 def load_lottie_file(filepath: str):
     with open(filepath, "r") as f:
