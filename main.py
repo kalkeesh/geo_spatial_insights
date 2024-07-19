@@ -17,7 +17,7 @@ def load_lottie_file(filepath: str):
 lottie_animation = load_lottie_file("globe.json")
 
 def main():
-    st.set_page_config(page_title="geo spatial insights", page_icon = "🗺", layout = "wide", initial_sidebar_state = "auto")
+    st.set_page_config(page_title="geo spatial insights", page_icon = "🗺", layout = "centered", initial_sidebar_state = "auto")
 
     # st.set_page_config(layout="wide")
     # st.title("Geo Spatial Insights")
