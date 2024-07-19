@@ -10,7 +10,6 @@ from math import radians, sin, cos, sqrt, atan2
 from streamlit_lottie import st_lottie
 import json
 
-st.set_page_config(page_title="geo spatial insights", page_icon = "🗺", layout = "wide", initial_sidebar_state = "auto")
 
 def load_lottie_file(filepath: str):
     with open(filepath, "r") as f:
@@ -18,7 +17,9 @@ def load_lottie_file(filepath: str):
 lottie_animation = load_lottie_file("globe.json")
 
 def main():
-    st.set_page_config(layout="wide")
+    st.set_page_config(page_title="geo spatial insights", page_icon = "🗺", layout = "wide", initial_sidebar_state = "auto")
+
+    # st.set_page_config(layout="wide")
     # st.title("Geo Spatial Insights")
     st.image("title.png", use_column_width=True)  
     EDA_tasks = ["1.distinguish attributes","2.Data Cleaning", "3.Speed","4.Maps","5.Entry & Exit points","About Creator🧐"]
